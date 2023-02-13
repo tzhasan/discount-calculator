@@ -11,21 +11,21 @@
   <main>
     <section class="w-3/4 bg-lime-300 mx-auto mb-16 rounded-xl mt-16">
       <h1 class="text-4xl font-bold slate-200 py-12 text-center">Discount calculator</h1>
-        <div class="grid grid-cols-3 gap-6 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <div class="text-right">
             <label class="text-2xl p-2 font-semibold slate-200 block" for="price">Product price:</label>
               <label class="text-2xl p-2 font-semibold slate-200 block" for="Discount">Discount:</label>
               <label class="text-2xl p-2 font-semibold slate-200 block" for="coupon">Coupon:</label>
           </div>
           <div>
-            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="price-field"> <br>
-            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="discount-field"> <br>
-            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="coupon-field">
+            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="price-field" placeholder="Product Price"> <br>
+            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="discount-field" placeholder="Discount %"> <br>
+            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="coupon-field" placeholder="Discount %">
             <p class="hidden">Coupon code is not valid</p>
           </div>
           <div>
             <h1 class="text-2xl font-semibold slate-200 block" >Final Price</h1>
-            <input onfocus="this.value=''" id="final-price" class="mb-0.5 rounded outline-0 border-2 border-slate-500 h-12 p-2" type="text">
+            <p id="final-price" class="bg-white mb-0.5 rounded border-2 border-slate-500 h-12 w-3/5 p-2" type="text"></p>
           </div>
         </div>
         <div class="text-center">
