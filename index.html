@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main>
+    <section class="w-3/4 bg-lime-300 mx-auto mb-16 rounded-xl mt-16">
+      <h1 class="text-4xl font-bold slate-200 py-12 text-center">Discount calculator</h1>
+        <div class="grid grid-cols-3 gap-6 mb-16">
+          <div class="text-right">
+            <label class="text-2xl p-2 font-semibold slate-200 block" for="price">Product price:</label>
+              <label class="text-2xl p-2 font-semibold slate-200 block" for="Discount">Discount:</label>
+              <label class="text-2xl p-2 font-semibold slate-200 block" for="coupon">Coupon:</label>
+          </div>
+          <div>
+            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="price-field"> <br>
+            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="discount-field"> <br>
+            <input onfocus="this.value=''" class="mb-2 p-2 rounded outline-0 border-2 border-slate-500" type="text" name="" id="coupon-field">
+            <p class="hidden">Coupon code is not valid</p>
+          </div>
+          <div>
+            <h1 class="text-2xl font-semibold slate-200 block" >Final Price</h1>
+            <input onfocus="this.value=''" id="final-price" class="mb-0.5 rounded outline-0 border-2 border-slate-500 h-12 p-2" type="text">
+          </div>
+        </div>
+        <div class="text-center">
+          <button id="calculate-btn" class="bg-green-500 px-6 py-4 text-2xl font-bold rounded-md text-white mb-16 hover:bg-green-800">Calculate</button>
+          <button id="reset-btn" class="bg-red-600 px-6 py-4 text-2xl font-bold rounded-md text-white mb-16 hover:bg-red-800">Reset</button>
+        </div>
+    </section>
+
+
+  </main>
+
+  <script src="js/utility.js"></script>
+  <script src="js/style.js"></script>
+</body>
+</html>
